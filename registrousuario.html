@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro de Usuario</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <main>
+        <div class="main-left">
+            <h2>GRUPO LEON</h2>
+            <img src="grupoleon.jpg" alt="logo">
+        </div>
+
+        <div class="main-right">
+            <h2>Registro de Usuario</h2>
+       <form action="registro.php" method="post">
+        NOMBRE DE USUARIO: <input type="text" name="nombre_usuario" required><br><br>
+        DNI: <input type="text" name="DNI" required><br><br>
+        CUIL: <input type="text" name="CUIL" required><br><br>
+        DOMICILIO: <input type="text" name="DOMICILIO" required><br><br>
+        TELEFONO: <input type="text" name="TELEFONO" required><br><br>
+        CORREO: <input type="text" name="CORREO" required><br><br>
+        PROFESION: <input type="text" name="PROFESION" required><br><br>
+
+        ¿Registrarse como LOCATARIO?
+        <input type="radio" name="tipo_registro" value="locatario"><br>
+    
+        ¿Registrarse como LOCADOR?
+        <input type="radio" name="tipo_registro" value="locador"><br><br>
+        
+        Contraseña: <input type="password" name="contrasena" id="contrasena" required><br><br>
+        Repetir Contraseña: <input type="password" name="contrasena_repetida" id="contrasena_repetida" required><br><br>
+        <div id="mensaje_contraseña"></div><br>
+        <input type="submit" value="Registrar" id="registrar_btn">
+       </form>
+         
+
+        </div>
+    </main>
+
+    <script>
+        // Agregar un evento para comprobar si las contraseñas coinciden
+        const contraseña = document.getElementById('contrasena');
+        const contraseñaRepetida = document.getElementById('contrasena_repetida');
+        const mensajeContraseña = document.getElementById('mensaje_contraseña');
+        const registrarBtn = document.getElementById('registrar_btn');
+
+        registrarBtn.addEventListener('click', function (event) {
+            if (contraseña.value !== contraseñaRepetida.value) {
+                event.preventDefault();
+                mensajeContraseña.textContent = 'Las contraseñas no coinciden.';
+                mensajeContraseña.style.color = 'red';
+            } else {
+                mensajeContraseña.textContent = ''; // Limpiar el mensaje de error
+            }
+        });
+    </script>
+
+
+<footer>
+    <div class="footer-section">
+        <h3>Sección 1</h3>
+        <p>Contenido de la sección 1 del pie de página.</p>
+    </div>
+    <div class="footer-section">
+        <h3>Sección 2</h3>
+        <p>Contenido de la sección 2 del pie de página.</p>
+    </div>
+    <div class="footer-section">
+        <h3>Sección 3</h3>
+        <p>Contenido de la sección 3 del pie de página.</p>
+    </div>
+    <div class="footer-row">
+        <p>Un cuarto elemento que abarca las 3 divisiones.</p>
+    </div>
+</footer>
+
+
+</body>
+</html>
