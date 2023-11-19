@@ -10,10 +10,18 @@ body {
 main {
     display: flex;
 
-        padding-top: 150px;    
-        padding-bottom: 150px; 
+        padding-top: 50px;    
+        padding-bottom: 50px; 
 
 }
+
+.main-left img {
+    width: 800px;  
+    height:500px; 
+} 
+
+
+
 
 .main-left, .main-right {
     flex: 1;
@@ -29,7 +37,7 @@ main {
 }
 
 footer {
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -49,4 +57,40 @@ footer {
     flex-basis: 100%;
 }
 
-/* Estilos adicionales a tu gusto */
+
+.flex-container {
+    display: flex;
+    border: 2px solid #333; /* Agrega un borde sólido de 2px y color gris oscuro */
+    padding: 10px; /* Añade un espacio alrededor del contenedor */
+    font-family: Arial, sans-serif; /* Establece la tipografía del texto */
+}
+
+.user-data {
+    margin-right: 20px;
+    border: 1px solid #c20707; /* Agrega un borde más delgado y color gris claro */
+    padding: 3px; /* Añade espacio interno a cada div de datos de usuario */
+    font-style: italic; /* Establece el estilo de la fuente en itálica */
+}
+
+.multiple-line-breaks {
+    margin-top: 200px; /* Ajusta el valor para obtener el espacio deseado (20px como ejemplo) */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #348779;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Estilo para la última fila */
+tr:last-child {
+    text-align: center;
+}
+
+
+

@@ -28,8 +28,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $contrasena_hash = password_hash($contrasena, PASSWORD_DEFAULT);
 
 
-
-
 // Realiza la conexión a la base de datos aquí
 
 // Verifica la existencia de 'tipo_registro' en $_POST
@@ -48,6 +46,10 @@ if (isset($_POST["tipo_registro"])) {
     if (!empty($sql)) {
         if ($conn->query($sql) === TRUE) {
             echo "Registro exitoso";
+            echo '<br>';
+            echo '<br>';
+            echo '<a href="iniciosesion.html">IR A INICIAR SESIÓN</a>';
+            ;
         } else {
             echo "Error al registrar: " . $conn->error;
         }
@@ -57,6 +59,9 @@ if (isset($_POST["tipo_registro"])) {
 } else {
     echo "No se recibió información para el registro";
 }
+
+
+
 
     $conn->close();
 ?>
