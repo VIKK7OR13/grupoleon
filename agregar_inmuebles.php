@@ -119,11 +119,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-
 <footer>
         <div class="footer-section">
         
-            <h3>SÍGUENOS</h3>
+            <h3>SEGUINOS</h3>
             <br>
 
             <p><i class="fa-brands fa-facebook fa-beat-fade fa-2xl"></i> &nbsp;
@@ -134,8 +133,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </p>
         </div>
         <div class="footer-section">
-            <h3>Sección 2</h3>
-            <p>Contenido de la sección 2 del pie de página.</p>
+            <p> <img src="footerleon.png" alt="logo"></p>
         </div>
         <div class="footer-section">
             <h3>CONTACTO</h3>
@@ -149,7 +147,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <a href="https://maps.app.goo.gl/j6idanoqvvZas7U68" target="_blank">Ver en Mapa</a>
         </div>
         <div class="footer-row">
-            <p>&copy; 2023 Grupo Leon. Todos los derechos reservados.</p>
+            &copy; 2023 Grupo Leon. Todos los derechos reservados.
         </div>
     </footer>
 
@@ -157,8 +155,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 </body>
 </html>   
-
-
-
-
-

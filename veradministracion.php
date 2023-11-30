@@ -23,19 +23,19 @@
 
 
         <form action="" method="post">
-        <label for="tipo_usuario">Seleccionar tipo de usuario:</label>
+        <label for="tipo_usuario"><h2> Seleccionar tipo de cliente: </h2></label>
+        
         <select name="tipo_usuario" id="tipo_usuario">
             <option value="locatario">Locatario</option>
             <option value="locador">Locador</option>
         </select>
+        
+        <br> <br>
         <input type="submit" value="Mostrar usuarios">
     </form>
 
 
 
-    <h3>controlador de usuario</h3>
-
-   
 
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -76,6 +76,7 @@
             <th>TELEFONO</th>
             <th>MAIL</th>
             <th>OCUPACION</th>
+            <th></th>
             </tr>
             ";
             while ($fila = $resultado->fetch_assoc()) {
@@ -93,20 +94,22 @@
                 echo "<td>";
              
 
-
-
-
                
 echo '<a href="agregardeuda.php?usuario_id=' . $fila['ID_' . strtoupper($tipo_usuario)] . '">Agregar Deuda</a>';
 echo '<br>';
-               
+echo '<br>';               
 echo '<a href="agregar_garante.php?usuario_id=' . $fila['ID_' . strtoupper($tipo_usuario)] . '">Asignar garante</a>';
 echo '<br>';
-
+echo '<br>';
+echo '<a href="agregar_servicio.php?usuario_id=' . $fila['ID_' . strtoupper($tipo_usuario)] . '">Agregar deuda servicio</a>';
+echo '<br>';
+echo '<br>';
 echo '<a href="agregar_inmuebles.php?usuario_id=' . $fila['ID_' . strtoupper($tipo_usuario)] . '">Agregar inmueble</a>';
-
-
-
+echo '<br>';
+echo '<br>';
+echo '<a href="VERTODOCLIENTE.php?usuario_id=' . $fila['ID_' . strtoupper($tipo_usuario)] . '">VER TODO</a>';
+echo '<br>';
+echo '<br>';
 
 
                echo "</td>";
@@ -127,14 +130,12 @@ echo '<a href="agregar_inmuebles.php?usuario_id=' . $fila['ID_' . strtoupper($ti
     }
     ?>
 
-
-
-
+<br><br><br><br><br><br><br><br><br><br><br><br>
 
 <footer>
         <div class="footer-section">
         
-            <h3>SÍGUENOS</h3>
+            <h3>SEGUINOS</h3>
             <br>
 
             <p><i class="fa-brands fa-facebook fa-beat-fade fa-2xl"></i> &nbsp;
@@ -145,8 +146,7 @@ echo '<a href="agregar_inmuebles.php?usuario_id=' . $fila['ID_' . strtoupper($ti
             </p>
         </div>
         <div class="footer-section">
-            <h3>Sección 2</h3>
-            <p>Contenido de la sección 2 del pie de página.</p>
+            <p> <img src="footerleon.png" alt="logo"></p>
         </div>
         <div class="footer-section">
             <h3>CONTACTO</h3>
@@ -160,12 +160,9 @@ echo '<a href="agregar_inmuebles.php?usuario_id=' . $fila['ID_' . strtoupper($ti
             <a href="https://maps.app.goo.gl/j6idanoqvvZas7U68" target="_blank">Ver en Mapa</a>
         </div>
         <div class="footer-row">
-            <p>&copy; 2023 Grupo Leon. Todos los derechos reservados.</p>
+            &copy; 2023 Grupo Leon. Todos los derechos reservados.
         </div>
     </footer>
-
-
-
 </body>
 </html>   
 

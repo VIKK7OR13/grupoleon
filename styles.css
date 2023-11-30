@@ -1,10 +1,11 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
     margin: 0;
     padding: 0;
 }
-
 
 
 main {
@@ -16,7 +17,7 @@ main {
 }
 
 .main-left img {
-    width: 800px;  
+    width: 750px;  
     height:500px; 
 } 
 
@@ -25,7 +26,7 @@ main {
 
 .main-left, .main-right {
     flex: 1;
-    padding: 20px;
+    padding: 15px;
 }
 
 .main-left {
@@ -94,3 +95,100 @@ tr:last-child {
 
 
 
+        h2 {
+            color: #007bff;
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-left: 20px ;
+        }
+
+        th, td {
+            border: 1px solid #022977;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        p {
+            margin-top: 20px;
+        }
+    
+
+
+
+
+ /* Estilo para el formulario */
+ form {
+    text-align: center;
+    margin: 50px;
+    border: 2px solid #6a6969; /* Borde de 2 píxeles sólido con color gris claro (#ddd) */
+    padding: 70px; /* Espaciado interno del formulario */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+
+
+
+/* Estilo para el botón submit */
+input[type="submit"] {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo para el botón submit al pasar el ratón sobre él */
+input[type="submit"]:hover {
+    background-color: #45a049; /* Cambia el color de fondo al pasar el ratón sobre el botón */
+} 
+
+
+
+/* Estilo para el elemento select */
+select {
+    padding: 8px; /* Espaciado interno */
+    font-size: 14px; /* Tamaño del texto */
+    border: 1px solid #ddd; /* Borde de 1 píxel sólido con color gris claro (#ddd) */
+    border-radius: 4px; /* Bordes redondeados */
+    outline: none; /* Elimina el contorno predeterminado en algunos navegadores */
+    background-color: white; /* Color de fondo */
+    width: 150px; /* Ancho del elemento select */
+}
+
+/* Estilo para el elemento option dentro de select */
+select option {
+    padding: 8px;
+}
+
+/* Cambiar el estilo al pasar el ratón sobre el elemento select */
+select:hover {
+    border-color: #555; /* Cambia el color del borde al pasar el ratón sobre el elemento select */
+}
+
+
+p {
+    font-family: "Arial", sans-serif;
+    /* Puedes cambiar "Arial" por el nombre de la fuente que desees, o añadir fuentes alternativas */
+    font-size: 16px; /* Puedes ajustar el tamaño de la fuente según tus preferencias */
+    line-height: 1.5; /* Puedes ajustar la altura de línea según tus preferencias */
+    /* Otros estilos adicionales según tus necesidades */
+}

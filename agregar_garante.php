@@ -76,31 +76,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body onload="mostrarNotificacion();">
 
-<h2>Asignar Garante</h2>
+
 
 
 <form action="" method="post">
+<h2>Asignar Garante</h2>
     <label for="nombre_y_apellido_garante">Nombre y Apellido del Garante:</label>
     <input type="text" name="nombre_y_apellido_garante" required>
-    <br>
+    <br><br>
     <label for="dni_garante">DNI del Garante:</label>
     <input type="text" name="dni_garante" required>
-    <br>
+    <br><br>
     <label for="cuil_garante">CUIL del Garante:</label>
     <input type="text" name="cuil_garante" required>
-    <br>
+    <br><br>
     <label for="domicilio_garante">Domicilio del Garante:</label>
     <input type="text" name="domicilio_garante" required>
-    <br>
+    <br><br>
     <label for="telefono_garante">Teléfono del Garante:</label>
     <input type="text" name="telefono_garante" required>
-    <br>
+    <br><br>
     <label for="correo_garante">Correo del Garante:</label>
     <input type="email" name="correo_garante" required>
-    <br>
+    <br><br>
     <label for="ocupacion_garante">Ocupación del Garante:</label>
     <input type="text" name="ocupacion_garante" required>
-    <br>
+    <br><br>
     <!-- Incluir el usuario_id en un campo oculto -->
     <input type="hidden" name="usuario_id" value="<?php echo $usuario_id; ?>">
 
@@ -110,5 +111,41 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 <a href="veradministracion.php">Volver atras</a>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<footer>
+        <div class="footer-section">
+        
+            <h3>SEGUINOS</h3>
+            <br>
+
+            <p><i class="fa-brands fa-facebook fa-beat-fade fa-2xl"></i> &nbsp;
+                <i class="fa-brands fa-linkedin fa-beat-fade fa-2xl"></i> &nbsp; 
+                <a href="https://instagram.com/grupoleon.inmobiliaria?igshid=MTUwN2J1dDl3OWp0aA==">           
+            <i class="fa-brands fa-instagram fa-beat-fade fa-2xl"></i> 
+                </a>
+            </p>
+        </div>
+        <div class="footer-section">
+            <p> <img src="footerleon.png" alt="logo"></p>
+        </div>
+        <div class="footer-section">
+            <h3>CONTACTO</h3>
+            <i class="fa-regular fa-envelope fa-lg"></i> &nbsp;
+            <a href="mailto:info@passadoreyasoc.com.ar">grupoleoncba@gmail.com</a>
+
+           <p> <i class="fa-brands fa-whatsapp fa-lg" style="color: #3aaa0e;"></i>
+            +54 9 351 3469310</p>
+            
+            <p><i class="fa-solid fa-location-dot fa-lg"></i> &nbsp; San Martin 165. 2 piso of 206. Còrdoba,Argentina</p>
+            <a href="https://maps.app.goo.gl/j6idanoqvvZas7U68" target="_blank">Ver en Mapa</a>
+        </div>
+        <div class="footer-row">
+            &copy; 2023 Grupo Leon. Todos los derechos reservados.
+        </div>
+    </footer>
+
+
+
 </body>
 </html>

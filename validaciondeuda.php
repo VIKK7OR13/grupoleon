@@ -41,7 +41,10 @@ if ($stmt->execute()) {
     echo "REGISTRO EXITOSO DE LAS DEUDAS";
     echo '<br>';
     echo '<br>';
-    echo '<a href="veradministracion.php">Volver atras</a>';
+    echo '<script>';
+    echo 'alert("Registro exitoso de las deudas");';
+    echo 'window.location.href = "veradministracion.php";';
+    echo '</script>';
 } else {
     echo "Error al registrar en la tabla cuotas_alquiler: " . $stmt->error;
 }

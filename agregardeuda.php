@@ -147,41 +147,47 @@ if (isset($_GET['usuario_id'])) {
     <a href="veradministracion.php">Volver atras</a>
 
 <?php
-    echo '<footer>
-        <div class="footer-section">
-            <h3>SÍGUENOS</h3>
-            <br>
-            <p><i class="fa-brands fa-facebook fa-beat-fade fa-2xl"></i> &nbsp;
-                <i class="fa-brands fa-linkedin fa-beat-fade fa-2xl"></i> &nbsp; 
-                <a href="https://instagram.com/grupoleon.inmobiliaria?igshid=MTUwN2J1dDl3OWp0aA==">           
-                    <i class="fa-brands fa-instagram fa-beat-fade fa-2xl"></i> 
-                </a>
-            </p>
-        </div>
-        <div class="footer-section">
-            <h3>Sección 2</h3>
-            <p>Contenido de la sección 2 del pie de página.</p>
-        </div>
-        <div class="footer-section">
-            <h3>CONTACTO</h3>
-            <i class="fa-regular fa-envelope fa-lg"></i> &nbsp;
-            <a href="mailto:info@passadoreyasoc.com.ar">grupoleoncba@gmail.com</a>
-            <p> <i class="fa-brands fa-whatsapp fa-lg" style="color: #3aaa0e;"></i>
-                +54 9 351 3469310
-            </p>
-            <p><i class="fa-solid fa-location-dot fa-lg"></i> &nbsp; San Martin 165. 2 piso of 206. Còrdoba,Argentina</p>
-            <a href="https://maps.app.goo.gl/j6idanoqvvZas7U68" target="_blank">Ver en Mapa</a>
-        </div>
-        <div class="footer-row">
-            <p>&copy; 2023 Grupo Leon. Todos los derechos reservados.</p>
-        </div>
-    </footer>';
+    
+          
 } else {
     // Redirige o maneja el caso en el que usuario_id no está establecido
     echo "Usuario no especificado.";
 }
 ?>
 
+
+
+<footer>
+        <div class="footer-section">
+        
+            <h3>SEGUINOS</h3>
+            <br>
+
+            <p><i class="fa-brands fa-facebook fa-beat-fade fa-2xl"></i> &nbsp;
+                <i class="fa-brands fa-linkedin fa-beat-fade fa-2xl"></i> &nbsp; 
+                <a href="https://instagram.com/grupoleon.inmobiliaria?igshid=MTUwN2J1dDl3OWp0aA==">           
+            <i class="fa-brands fa-instagram fa-beat-fade fa-2xl"></i> 
+                </a>
+            </p>
+        </div>
+        <div class="footer-section">
+            <p> <img src="footerleon.png" alt="logo"></p>
+        </div>
+        <div class="footer-section">
+            <h3>CONTACTO</h3>
+            <i class="fa-regular fa-envelope fa-lg"></i> &nbsp;
+            <a href="mailto:info@passadoreyasoc.com.ar">grupoleoncba@gmail.com</a>
+
+           <p> <i class="fa-brands fa-whatsapp fa-lg" style="color: #3aaa0e;"></i>
+            +54 9 351 3469310</p>
+            
+            <p><i class="fa-solid fa-location-dot fa-lg"></i> &nbsp; San Martin 165. 2 piso of 206. Còrdoba,Argentina</p>
+            <a href="https://maps.app.goo.gl/j6idanoqvvZas7U68" target="_blank">Ver en Mapa</a>
+        </div>
+        <div class="footer-row">
+            &copy; 2023 Grupo Leon. Todos los derechos reservados.
+        </div>
+    </footer>
 </body>
 
 </html>

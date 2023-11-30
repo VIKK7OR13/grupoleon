@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Recuperar Contraseña</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" href="leonpestaña.ico">
-
     <script src="https://kit.fontawesome.com/db443e806b.js" crossorigin="anonymous"></script>
 
 
-
+    <title>Iniciar Sesión</title>
 </head>
 <body>
 
-    <main>
+
+ <main>
         <div class="main-left">
             <img src="grupoleon.jpg" alt="logo">
         </div>
 
         <div class="main-right">
-            <h2>Recuperar Contraseña</h2>
-        
-          <form action="recuperar_contraseña.php" method="POST">
-            Correo Electrónico:  
-            <input id="correo" name="correo" required><br><br>
-            <input type="submit" value="Enviar Solicitud de Recuperación">
-        </form>
-        
+            
+           
+         <h2>Iniciar Sesión</h2>
 
-         
+         <form action="iniciar_sesion.php" method="post">
+         Nombre de Usuario: <input type="text" name="nombre_usuario" required><br><br>
+         Contraseña: <input type="password" name="contrasena" required><br><br>
+         <input type="submit" value="Iniciar Sesión"><br><br>
+         <a href="recuperarpassword.html">Olvide mi Contraseña</a><br>
+         <a href="registrousuario.html">Generar nuevo usuario</a>
+         </form>
 
         </div>
     </main>
 
-    <footer>
+
+<footer>
         <div class="footer-section">
         
             <h3>SEGUINOS</h3>
